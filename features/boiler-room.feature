@@ -1,6 +1,6 @@
 Feature: Search Boiler Room on Google
 
   Scenario: Search Boiler Room on Google
-    Given I visit google homepage
-    When  I search for Boiler Room
+    Given I visit Worldcoo homepage
+    When  I click on close companies
     Then I should see the result

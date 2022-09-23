@@ -3,11 +3,10 @@ import webdriver, { By, Key } from "selenium-webdriver";
 import * as assert from "assert";
 let driver = new webdriver.Builder().forBrowser("chrome").build();
 
-Given("I visit google homepage", async function () {
-  //await driver.get("https://www.google.com");
+Given("I visit Worldcoo homepage", async function () {
   await driver.get("https://www.worldcoo.com/");
 });
-When("I search for Boiler Room", async function () {
+When("I click on close companies", async function () {
   await driver
     .findElement(By.className("hasHome hasSubmenu close company"))
     .click();
